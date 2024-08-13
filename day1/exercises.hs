@@ -1,5 +1,4 @@
--- 1
--- Schreiben Sie eine Funktion, die zwei ganze Zahlen als Parameter erhält und True zurückgibt, falls die beiden Werte gleich sind, sonst soll False zurückgegeben werden.
+-- Aufgabe 1
 isEquals :: Int -> Int -> Bool
 isEquals x y = x == y
 
@@ -8,5 +7,55 @@ isEquals x y = x == y
 -- >>> isEquals 6 6
 -- True
 
--- 2
--- Schreiben Sie eine Funktion, die drei ganze Zahlen als Parameter erhält und True zurückgibt, falls alle Werte gleich sind, sonst soll False zurückgegeben werden. Der AND-Operator heisst auch hier &&
+-- Aufgabe 2
+isEquals3 :: Int -> Int -> Int -> Bool
+isEquals3 a b c = a == b && b == c
+
+-- >>> isEquals3 2 2 3
+-- False
+-- >>> isEquals3 4 4 4
+-- True
+
+-- Aufgabe 3
+largerNumber :: Double -> Double -> Double
+largerNumber a b
+  | a < b = b
+  | a > b = a
+
+-- >>> largerNumber 4.1 (-5)
+-- 4.1
+
+-- Aufgabe 4
+squareValue :: Int -> Int
+squareValue a = a ^ 2
+
+-- >>> squareValue 6
+-- 36
+
+-- Aufgabe 5
+securityClassification :: Int -> String
+securityClassification a
+  | a >= 0 && a <= 8 = "Keine Gefahr"
+  | a == 9 = "Gefahr"
+  | a >= 10 && a <= 12 = "Erhebliche Gefahr"
+  | otherwise = "Gib bitte eine valide Zahl ein!"
+
+-- >>> securityClassification 0
+-- "Keine Gefahr"
+-- >>> securityClassification 9
+-- "Gefahr"
+-- >>> securityClassification 12
+-- "Erhebliche Gefahr"
+-- >>> securityClassification (-1)
+-- "Gib bitte eine valide Zahl ein!"
+
+-- Aufgabe 6
+calculateDiscount :: Double -> Double -> Double -> Double
+calculateDiscount purchasePrice limit discount
+  | purchasePrice > limit = purchasePrice * ((100 - discount) / 100)
+  | otherwise = purchasePrice
+
+-- >>> calculateDiscount 60 40 20
+-- 48.0
+-- >>> calculateDiscount 60 50 30
+-- 42.0

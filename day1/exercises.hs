@@ -51,11 +51,11 @@ securityClassification a
 
 -- Aufgabe 6
 calculateDiscount :: Double -> Double -> Double -> Double
-calculateDiscount purchasePrice limit discount
-  | purchasePrice > limit = purchasePrice * ((100 - discount) / 100)
-  | otherwise = purchasePrice
+calculateDiscount price limit discount
+  | price > limit = price * ((100 - discount) / 100)
+  | otherwise = price
 
 -- >>> calculateDiscount 60 40 20
 -- 48.0
--- >>> calculateDiscount 60 50 30
--- 42.0
+-- >>> calculateDiscount 60 70 30
+-- 60.0

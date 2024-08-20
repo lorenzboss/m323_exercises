@@ -1,4 +1,4 @@
--- Aufgabe 1
+-- Task 1
 isEquals :: Int -> Int -> Bool
 isEquals x y = x == y
 
@@ -7,7 +7,7 @@ isEquals x y = x == y
 -- >>> isEquals 6 6
 -- True
 
--- Aufgabe 2
+-- Task 2
 isEquals3 :: Int -> Int -> Int -> Bool
 isEquals3 a b c = a == b && b == c
 
@@ -16,7 +16,7 @@ isEquals3 a b c = a == b && b == c
 -- >>> isEquals3 4 4 4
 -- True
 
--- Aufgabe 3
+-- Task 3
 largerNumber :: Double -> Double -> Double
 largerNumber a b
   | a < b = b
@@ -25,14 +25,14 @@ largerNumber a b
 -- >>> largerNumber 4.1 (-5)
 -- 4.1
 
--- Aufgabe 4
+-- Task 4
 squareValue :: Int -> Int
 squareValue a = a ^ 2
 
 -- >>> squareValue 6
 -- 36
 
--- Aufgabe 5
+-- Task 5
 securityClassification :: Int -> String
 securityClassification a
   | a >= 0 && a <= 8 = "Keine Gefahr"
@@ -49,7 +49,7 @@ securityClassification a
 -- >>> securityClassification (-1)
 -- "Gib bitte eine valide Zahl ein!"
 
--- Aufgabe 6
+-- Task 6
 calculateDiscount :: Double -> Double -> Double -> Double
 calculateDiscount price limit discount
   | price > limit = price * ((100 - discount) / 100)

@@ -12,7 +12,7 @@ largestList listOfLists = maximum (map sum listOfLists)
 reduceLetters :: String -> String
 reduceLetters (x : xs)
   | null xs = [x]
-  | x == head xs = reduceLetters x
+  | x == head xs = reduceLetters xs
   | otherwise = x : reduceLetters xs
 
 reduceLetters2 :: String -> String

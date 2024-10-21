@@ -29,10 +29,10 @@ fib n = fib (n - 1) + fib (n - 2)
 -- fib 5 = (            2             +      1         ) + (     1          + 1    )
 -- fib 5 =                           3                   +              2
 -- fib 5 = 5
--- >>> fib 6
--- 8
+-- >>> fib 1
+-- 1
 
--- Task 4
+-- Task 4 (Mathematischer Euklidischen Algorithmus)
 ggt :: Int -> Int -> Int
 ggt a b
   | a `mod` b == 0 = b

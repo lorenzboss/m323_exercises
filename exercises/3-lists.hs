@@ -14,19 +14,19 @@
 range :: Int -> Int -> [Int]
 range a b = [a .. b]
 
--- >>> range 5 7
--- [5,6,7]
+-- >>> range 2 3
+-- [2,3]
 
--- Task 5
+-- Task 5 (1/1 + 1/2 + 1/n)
 summe :: Double -> Double
 summe n = sum [1 / x | x <- [1 .. n]]
 
--- >>> summe 2
--- 1.5
+-- >>> summe 4
+-- 2.083333333333333
 
--- Task 6
+-- Task 6 (!! is the index)
 secondLast :: [a] -> a
-secondLast a = a !! (length a - 2)
+secondLast list = list !! (length list - 2)
 
 -- >>> secondLast [1,2,3,4,5]
 -- 4

@@ -2,8 +2,8 @@
 isEquals :: Int -> Int -> Bool
 isEquals x y = x == y
 
--- >>> isEquals 3 5
--- False
+-- >>> isEquals 3 3
+-- True
 -- >>> isEquals 6 6
 -- True
 
@@ -13,6 +13,7 @@ isEquals3 a b c = a == b && b == c
 
 -- >>> isEquals3 2 2 3
 -- False
+
 -- >>> isEquals3 4 4 4
 -- True
 
@@ -22,8 +23,8 @@ largerNumber a b
   | a < b = b
   | a > b = a
 
--- >>> largerNumber 4.1 (-5)
--- 4.1
+-- >>> largerNumber 4 4
+-- 4.0
 
 -- Task 4
 squareValue :: Int -> Int

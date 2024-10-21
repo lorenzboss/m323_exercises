@@ -34,8 +34,8 @@ largestInt2 = foldl (\x y -> if x > y then x else y) 0
 isTrue :: [Bool] -> Bool
 isTrue list = foldl (\x y -> x || y) False list
 
--- >>> isTrue [False, False, False]
--- False
+-- >>> isTrue [True, False, False]
+-- True
 
 -- Task 5
 weirdFunction :: String

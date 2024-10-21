@@ -65,3 +65,9 @@ areaOfTriangle base height = halfBase * height
 -- 7-(4-(23-(5-0)))
 
 -- Funktion (Neuer Wert + Startwert/Ergebnis)
+
+func :: [Integer]
+func = [x + y | x <- take 2 [1 ..], y <- takeWhile (< 5) [1 .. 6]]
+
+-- >>> func
+-- [2,3,4,5,3,4,5,6]

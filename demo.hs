@@ -38,6 +38,14 @@ areaOfTriangle base height = halfBase * height
   where
     halfBase = base / 2
 
+-- combining two lists using ++
+-- >>> [1,2,3] ++ [4,5,6]
+-- [1,2,3,4,5,6]
+
+-- combining two lists using concat
+-- >>> concat [[1,2,3], [4,5,6]]
+-- [1,2,3,4,5,6]
+
 -- foldl (\x y -> 2*x + 3*y) 0 [7,4,23,5]
 -- 369
 -- 2* (2* (2* (2*0 + 3*7) + 3*4) + 3*23) + 3*5 = 369

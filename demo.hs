@@ -37,3 +37,23 @@ areaOfTriangle :: Double -> Double -> Double
 areaOfTriangle base height = halfBase * height
   where
     halfBase = base / 2
+
+-- foldl (\x y -> 2*x + 3*y) 0 [7,4,23,5]
+-- 369
+-- 2* (2* (2* (2*0 + 3*7) + 3*4) + 3*23) + 3*5 = 369
+
+--
+
+-- foldl (-) 0 [7,4,23,5]
+-- -39
+-- (((0-7)-4)-23)-5
+
+-- Funktion (Startwert/Ergebnis + Neuer Wert)
+
+--
+
+-- foldr (-) 0 [7,4,23,5]
+-- 21
+-- 7-(4-(23-(5-0)))
+
+-- Funktion (Neuer Wert + Startwert/Ergebnis)
